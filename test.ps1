@@ -19,9 +19,8 @@ $IP = '172.18.0.22'
 $CRED = New-Object PSCredential $USERNAME, (ConvertTo-SecureString -String $PASSWORD -AsPlainText -Force)
 Enter-PSSession -Credential $CRED -ComputerName $IP -Authentication Basic -UseSSL -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck)
 
-
 # $USERNAME = "User"
 # $PASSWORD = "Password12345!"
-# $IP = 172.18.0.22
+# $IP = '172.18.0.22'
 # $CRED = New-Object PSCredential $USERNAME, (ConvertTo-SecureString -String $PASSWORD -AsPlainText -Force)
 # Enter-PSSession -Credential $CRED -ComputerName $IP -Authentication Basic -UseSSL -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck)
